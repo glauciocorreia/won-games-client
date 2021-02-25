@@ -33,7 +33,7 @@ describe('<Logo />', () => {
     })
   })
 
-  it('should render a bigger logo withou text if hideOnMobile', () => {
+  it('should render a bigger logo without text if hideOnMobile', () => {
     renderWithTheme(<Logo hideOnMobile />)
     expect(screen.getByLabelText(/Won Games/i).parentElement).toHaveStyleRule(
       'width',
