@@ -30,6 +30,7 @@ const wrapperModifiers = {
     font-size: ${theme.font.sizes.xsmall};
     padding: 0 ${theme.spacings.xsmall};
     height: 2.6rem;
+    right: -1.5rem;
 
     &::before {
       top: 2.6rem;
