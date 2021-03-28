@@ -9,7 +9,7 @@ export type RadioProps = {
   label?: string
   labelFor?: string
   labelColor?: 'white' | 'black'
-  value?: RadioValue
+  value: RadioValue
 } & InputHTMLAttributes<HTMLInputElement>
 
 const Radio = ({
