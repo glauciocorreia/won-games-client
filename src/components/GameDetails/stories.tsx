@@ -13,6 +13,6 @@ export default {
 
 export const Default: Story = (args) => (
   <div style={{ maxWidth: '130rem', margin: '0 auto' }}>
-    <GameDetails {...args} />
+    <GameDetails platforms={['windows', 'linux', 'mac']} />
   </div>
 )
