@@ -38,7 +38,7 @@ const GameDetails = ({ platforms }: GameDetailsProps) => {
         </S.Block>
 
         <S.Block>
-          <S.Label>Plataforms</S.Label>
+          <S.Label>Platforms</S.Label>
           <S.IconsWrapper>
             {platforms.map((icon: Platform) => (
               <S.Icon key={icon}>{platformIcons[icon]}</S.Icon>
