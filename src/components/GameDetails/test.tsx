@@ -7,6 +7,7 @@ const props: GameDetailsProps = {
   developer: 'Different Tales',
   platforms: ['windows', 'mac', 'linux'],
   releaseDate: '2020-11-21T23:00:00',
+  publisher: 'Walkabout',
   rating: 'BR0',
   genres: ['Role-playing', 'Narrative'],
 }
