@@ -4,9 +4,9 @@ import GameInfo, { GameInfoProps } from 'components/GameInfo'
 import Gallery, { GalleryImageProps } from 'components/Gallery'
 import TextContent from 'components/TextContent'
 import GameDetails, { GameDetailsProps } from 'components/GameDetails'
+import Showcase from 'components/Showcase'
 import { GameCardProps } from 'components/GameCard'
 import { HighlightProps } from 'components/Highlight'
-import Showcase from 'components/Showcase'
 
 import * as S from './styles'
 
@@ -32,7 +32,7 @@ const Game = ({
   recommendedGames,
 }: GameTemplateProps) => (
   <Base>
-    <S.Cover src={cover} role="image" aria-label="true"></S.Cover>
+    <S.Cover src={cover} role="image" aria-label="cover"></S.Cover>
     <S.Main>
       <S.SectionGameInfo>
         <GameInfo {...gameInfo} />
