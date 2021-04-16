@@ -14,7 +14,17 @@ describe('<GameItem />', () => {
     renderWithTheme(<GameItem {...props} />)
 
     // verificar o title se foi renderizado
+    expect(
+      screen.getByRole('heading', { name: props.title })
+    ).toBeInTheDocument()
+
     // verificar a imagem
+    expect(screen.getByRole('img', { name: props.title })).toHaveAttribute(
+      'src',
+      props.img
+    )
+
     // verificar o preço
+    expect(screen.getByText(/R\$ 215,00/i)).toBeInTheDocument()
   })
 })
